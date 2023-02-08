@@ -1,0 +1,10 @@
+.btn_filter {
+    padding: 10px;
+    background-color: darkseagreen;
+    font-size: large;
+    color: white;
+    
+}
+.filtered {
+    background-color:coral;
+}

@@ -1,0 +1,9 @@
+.icon_like {
+    height: 30px;
+    width: 30px;
+    fill: white;
+}
+
+.liked {
+    fill: red;
+}

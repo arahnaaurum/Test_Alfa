@@ -1,0 +1,29 @@
+.card_container {
+    max-width: 750px;
+    background-color: darkslategray;
+    box-sizing: border-box;
+    border: white 3px solid;
+    padding: 24px;
+    position: relative;
+}
+
+.card_description {
+    font-size: 20px;
+}
+
+.card_description ul {
+    list-style-type: none;
+}
+
+.card_icon_delete {
+    fill:white;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+
+.card_icon_delete:hover {
+    transform: scale(0.8);
+}
