@@ -18,6 +18,10 @@ export const cardsReducer = (state = initialState, action) => {
     case DELETE_CARD:
       return {
         ...state,
+        listOfLikedCards: [
+          ...state.listOfLikedCards.slice(0, action.payload),
+          ...state.listOfLikedCards.slice(action.payload + 1)
+        ],
         listOfCards: [
           ...state.listOfCards.slice(0, action.payload),
           ...state.listOfCards.slice(action.payload + 1)
@@ -25,10 +29,6 @@ export const cardsReducer = (state = initialState, action) => {
         reserved: [
           ...state.reserved.slice(0, action.payload),
           ...state.reserved.slice(action.payload + 1)
-        ],
-        listOfLikedCards: [
-          ...state.listOfLikedCards.slice(0, action.payload),
-          ...state.listOfLikedCards.slice(action.payload + 1)
         ],
       }
     case LIKE_CARD:
